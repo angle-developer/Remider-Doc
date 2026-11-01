@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Reminder Robo</title>
+  <meta name="description" content="Official Privacy Policy for Reminder Robo by LOKMI TECH. Understand how your reminders, tasks, and data are securely handled 100% on-device.">
+  <meta name="theme-color" content="#4F46E5">
+  <link rel="icon" type="image/png" href="app_logo.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #4F46E5;
+      --primary-light: #6366F1;
+      --primary-dark: #3730A3;
+      --accent: #10B981;
+      --amber: #F59E0B;
+      --bg: #F8FAFC;
+      --surface: #FFFFFF;
+      --card-bg: #FFFFFF;
+      --text: #0F172A;
+      --text-muted: #64748B;
+      --border: #E2E8F0;
+      --border-subtle: #F1F5F9;
+      --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+      --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.08), 0 2px 4px -2px rgba(0, 0, 0, 0.04);
+      --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.03);
+      --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.09), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
+      --radius: 16px;
+      --radius-sm: 10px;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0B0F19;
+        --surface: #111827;
+        --card-bg: #151D30;
+        --text: #F1F5F9;
+        --text-muted: #94A3B8;
+        --border: #1E293B;
+        --border-subtle: #192338;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* Top Banner / Hero */
+    .hero {
+      background: linear-gradient(135deg, #312E81 0%, #1E1B4B 50%, #0F172A 100%);
+      color: #FFFFFF;
+      padding: 72px 24px 60px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle at center, rgba(99, 102, 241, 0.18) 0%, transparent 60%);
+      pointer-events: none;
+    }
+
+    .hero-content {
+      max-width: 820px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    .app-brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 24px;
+      background: rgba(255, 255, 255, 0.08);
+      padding: 8px 20px 8px 10px;
+      border-radius: 9999px;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(12px);
+    }
+
+    .app-logo {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      object-fit: cover;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    }
+
+    .app-title-tag {
+      font-weight: 700;
+      font-size: 1.15rem;
+      letter-spacing: -0.01em;
+      color: #FFFFFF;
+    }
+
+    .hero h1 {
+      font-size: 2.75rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.2;
+      margin-bottom: 16px;
+      background: linear-gradient(180deg, #FFFFFF 0%, #CBD5E1 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-subtitle {
+      font-size: 1.125rem;
+      color: #94A3B8;
+      max-width: 620px;
+      margin: 0 auto 28px;
+    }
+
+    .meta-pills {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .meta-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 6px 14px;
+      border-radius: 9999px;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      color: #E2E8F0;
+    }
+
+    .meta-pill.highlight {
+      background: rgba(16, 185, 129, 0.15);
+      border-color: rgba(16, 185, 129, 0.35);
+      color: #34D399;
+    }
+
+    /* Container */
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px 80px;
+    }
+
+    /* Highlights Banner */
+    .guarantees {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin: -24px auto 40px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .guarantee-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px;
+      box-shadow: var(--shadow);
+      text-align: center;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .guarantee-card:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .guarantee-icon {
+      font-size: 1.75rem;
+      margin-bottom: 8px;
+      display: inline-block;
+    }
+
+    .guarantee-title {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 4px;
+    }
+
+    .guarantee-desc {
+      font-size: 0.825rem;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+
+    /* Content Cards */
+    .section-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 32px;
+      margin-bottom: 24px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 18px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .section-num {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 38px;
+      height: 38px;
+      border-radius: 10px;
+      background: rgba(79, 70, 229, 0.1);
+      color: var(--primary);
+      font-weight: 800;
+      font-size: 1rem;
+      flex-shrink: 0;
+    }
+
+    .section-title {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--text);
+      letter-spacing: -0.01em;
+    }
+
+    p {
+      margin-bottom: 16px;
+      color: var(--text);
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    ul {
+      list-style: none;
+      margin-bottom: 16px;
+      padding-left: 0;
+    }
+
+    ul li {
+      position: relative;
+      padding-left: 28px;
+      margin-bottom: 10px;
+      color: var(--text);
+    }
+
+    ul li::before {
+      content: "✓";
+      position: absolute;
+      left: 6px;
+      top: 0;
+      color: var(--accent);
+      font-weight: 800;
+      font-size: 0.95rem;
+    }
+
+    /* Alert / Callout Box */
+    .callout {
+      background: rgba(79, 70, 229, 0.06);
+      border-left: 4px solid var(--primary);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      padding: 16px 20px;
+      margin: 18px 0;
+    }
+
+    .callout.success {
+      background: rgba(16, 185, 129, 0.08);
+      border-left-color: var(--accent);
+    }
+
+    .callout.warning {
+      background: rgba(245, 158, 11, 0.08);
+      border-left-color: var(--amber);
+    }
+
+    .callout p {
+      font-weight: 600;
+      color: var(--text);
+      margin: 0;
+    }
+
+    /* Permission Grid */
+    .permission-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 16px;
+      margin-top: 18px;
+    }
+
+    .permission-item {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 18px;
+    }
+
+    .permission-head {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+
+    .permission-icon {
+      font-size: 1.25rem;
+    }
+
+    .permission-name {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .permission-desc {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    /* Contact Box */
+    .contact-card {
+      background: linear-gradient(135deg, rgba(79, 70, 229, 0.08) 0%, rgba(99, 102, 241, 0.03) 100%);
+      border: 1px solid rgba(79, 70, 229, 0.25);
+      border-radius: var(--radius);
+      padding: 24px;
+      margin-top: 20px;
+    }
+
+    .contact-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      margin-top: 14px;
+    }
+
+    .contact-entry {
+      flex: 1;
+      min-width: 220px;
+    }
+
+    .contact-label {
+      font-size: 0.775rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-muted);
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .contact-val {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .contact-val a {
+      color: var(--primary);
+      text-decoration: none;
+      transition: color 0.15s ease;
+    }
+
+    .contact-val a:hover {
+      text-decoration: underline;
+      color: var(--primary-light);
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 32px 20px;
+      text-align: center;
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      background: var(--surface);
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 12px;
+    }
+
+    .footer-links a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+
+    /* Quick Jump Nav */
+    .toc-bar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
+      margin-bottom: 32px;
+      padding: 14px;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+    }
+
+    .toc-chip {
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 6px 12px;
+      border-radius: 9999px;
+      background: var(--bg);
+      color: var(--text-muted);
+      text-decoration: none;
+      border: 1px solid var(--border);
+      transition: all 0.15s ease;
+    }
+
+    .toc-chip:hover {
+      color: var(--primary);
+      border-color: var(--primary);
+      background: rgba(79, 70, 229, 0.08);
+    }
+
+    /* Print styles */
+    @media print {
+      body {
+        background: #FFFFFF !important;
+        color: #000000 !important;
+      }
+      .hero {
+        background: none !important;
+        color: #000000 !important;
+        padding: 20px 0 !important;
+        border-bottom: 2px solid #000000 !important;
+      }
+      .hero h1 {
+        color: #000000 !important;
+        -webkit-text-fill-color: #000000 !important;
+      }
+      .toc-bar, .guarantees, .meta-pills {
+        display: none !important;
+      }
+      .section-card {
+        border: none !important;
+        box-shadow: none !important;
+        padding: 16px 0 !important;
+        page-break-inside: avoid;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .hero {
+        padding: 48px 16px 40px;
+      }
+      .hero h1 {
+        font-size: 2.1rem;
+      }
+      .section-card {
+        padding: 22px 18px;
+      }
+      .section-title {
+        font-size: 1.15rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO SECTION -->
+  <header class="hero">
+    <div class="hero-content">
+      <div class="app-brand">
+        <img src="app_logo.png" alt="Reminder Robo Logo" class="app-logo" onerror="this.style.display='none'">
+        <span class="app-title-tag">Reminder Robo</span>
+      </div>
+
+      <h1>Privacy Policy</h1>
+      <p class="hero-subtitle">
+        Your privacy is our priority. Reminder Robo is engineered with a strict <strong>offline-first, zero-cloud, on-device architecture</strong>.
+      </p>
+
+      <div class="meta-pills">
+        <span class="meta-pill highlight">🛡️ 100% On-Device Storage</span>
+        <span class="meta-pill highlight">🚫 Zero Ads or Ad SDKs</span>
+        <span class="meta-pill highlight">☁️ No Developer Cloud Servers</span>
+        <span class="meta-pill">📅 Last Updated: October 29, 2026</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="container">
+
+    <!-- 4 CORE GUARANTEES -->
+    <div class="guarantees">
+      <div class="guarantee-card">
+        <span class="guarantee-icon">💾</span>
+        <div class="guarantee-title">Local Database</div>
+        <div class="guarantee-desc">All reminders, checklists, and dates remain exclusively on your phone.</div>
+      </div>
+      <div class="guarantee-card">
+        <span class="guarantee-icon">🚫</span>
+        <div class="guarantee-title">No Ad Trackers</div>
+        <div class="guarantee-desc">No advertising SDKs, third-party analytics, or behavioral trackers.</div>
+      </div>
+      <div class="guarantee-card">
+        <span class="guarantee-icon">🔒</span>
+        <div class="guarantee-title">Paid & Private</div>
+        <div class="guarantee-desc">We never sell, rent, monetize, or transmit your personal data.</div>
+      </div>
+      <div class="guarantee-card">
+        <span class="guarantee-icon">⚙️</span>
+        <div class="guarantee-title">Full User Control</div>
+        <div class="guarantee-desc">You control every permission, entry, schedule, and deletion.</div>
+      </div>
+    </div>
+
+    <!-- QUICK JUMP TABLE OF CONTENTS -->
+    <nav class="toc-bar" aria-label="Privacy Policy Sections">
+      <a href="#intro" class="toc-chip">1. Introduction</a>
+      <a href="#storage" class="toc-chip">2. Information Storage</a>
+      <a href="#use" class="toc-chip">3. Use of Information</a>
+      <a href="#permissions" class="toc-chip">4. Device Permissions</a>
+      <a href="#sharing" class="toc-chip">5. Data Sharing</a>
+      <a href="#security" class="toc-chip">6. Data Security</a>
+      <a href="#retention" class="toc-chip">7. Retention & Deletion</a>
+      <a href="#paid" class="toc-chip">8. Paid Application</a>
+      <a href="#children" class="toc-chip">9. Children's Privacy</a>
+      <a href="#choices" class="toc-chip">10. Your Choices</a>
+      <a href="#changes" class="toc-chip">11. Changes</a>
+      <a href="#contact" class="toc-chip">12. Contact Us</a>
+    </nav>
+
+    <!-- SECTION 1 -->
+    <section id="intro" class="section-card">
+      <div class="section-header">
+        <span class="section-num">1</span>
+        <h2 class="section-title">Introduction</h2>
+      </div>
+      <p>
+        <strong>Reminder Robo</strong> is a paid Android application designed to help users manage reminders, tasks, bills, EMIs, important dates, and daily activities.
+      </p>
+      <p>
+        We respect your privacy. This Privacy Policy explains how the app handles information and uses device permissions to provide its features.
+      </p>
+    </section>
+
+    <!-- SECTION 2 -->
+    <section id="storage" class="section-card">
+      <div class="section-header">
+        <span class="section-num">2</span>
+        <h2 class="section-title">Information Storage</h2>
+      </div>
+      <p>
+        Reminder Robo stores reminder information and app data locally on your device using an on-device database.
+      </p>
+      <p>Information you enter may include:</p>
+      <ul>
+        <li>Reminder titles and descriptions.</li>
+        <li>Task details and completion status.</li>
+        <li>Dates, times, and repeat schedules.</li>
+        <li>Bill and EMI reminders.</li>
+        <li>Important dates and personal notes.</li>
+        <li>App preferences and settings.</li>
+      </ul>
+
+      <div class="callout success">
+        <p>
+          🔒 <strong>Your reminder data is not transmitted to our servers because Reminder Robo does not use a developer-operated cloud storage service.</strong>
+        </p>
+      </div>
+
+      <p>
+        The app does not use advertising SDKs, analytics services, or crash-reporting services.
+      </p>
+      <p>
+        Please note that Android device backups or other device-level services may handle app data according to their own settings and policies.
+      </p>
+    </section>
+
+    <!-- SECTION 3 -->
+    <section id="use" class="section-card">
+      <div class="section-header">
+        <span class="section-num">3</span>
+        <h2 class="section-title">Use of Information</h2>
+      </div>
+      <p>Information stored by the app is used to provide its core functionality, including:</p>
+      <ul>
+        <li>Creating and managing reminders.</li>
+        <li>Scheduling alarms and notifications.</li>
+        <li>Displaying tasks and important dates.</li>
+        <li>Saving app preferences.</li>
+        <li>Supporting optional features that you choose to use.</li>
+      </ul>
+      <div class="callout">
+        <p><strong>We do not sell your personal information.</strong></p>
+      </div>
+    </section>
+
+    <!-- SECTION 4 -->
+    <section id="permissions" class="section-card">
+      <div class="section-header">
+        <span class="section-num">4</span>
+        <h2 class="section-title">Device Permissions</h2>
+      </div>
+      <p>Reminder Robo may request the following permissions to support its features:</p>
+
+      <div class="permission-grid">
+        <div class="permission-item">
+          <div class="permission-head">
+            <span class="permission-icon">📷</span>
+            <div class="permission-name">Camera</div>
+          </div>
+          <p class="permission-desc">
+            Camera access may be used when you choose to capture a photo to attach to a reminder or use another camera-related feature. The camera is not intended to be used for background surveillance.
+          </p>
+        </div>
+
+        <div class="permission-item">
+          <div class="permission-head">
+            <span class="permission-icon">🖼️</span>
+            <div class="permission-name">Photos & Gallery</div>
+          </div>
+          <p class="permission-desc">
+            Photo or gallery access may be used when you choose an image to attach to a reminder or personalize content within the app. Selected images are used for the feature you request. The app does not intentionally upload these images to a developer-operated server.
+          </p>
+        </div>
+
+        <div class="permission-item">
+          <div class="permission-head">
+            <span class="permission-icon">🔔</span>
+            <div class="permission-name">Notifications</div>
+          </div>
+          <p class="permission-desc">
+            Notification permission allows Reminder Robo to display reminders, task alerts, and other notifications you enable. If you deny notification permission, some reminder alerts may not appear.
+          </p>
+        </div>
+
+        <div class="permission-item">
+          <div class="permission-head">
+            <span class="permission-icon">⏰</span>
+            <div class="permission-name">Full-Screen Alarms</div>
+          </div>
+          <p class="permission-desc">
+            Where supported and permitted by Android, the app may use full-screen notifications to display important scheduled alarms or reminders prominently over the lock screen. You can manage applicable permissions through your device settings.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5 -->
+    <section id="sharing" class="section-card">
+      <div class="section-header">
+        <span class="section-num">5</span>
+        <h2 class="section-title">Data Sharing</h2>
+      </div>
+      <p>
+        Reminder Robo does not operate its own server to collect or share your reminder information.
+      </p>
+      <p>
+        The app does not integrate advertising, analytics, or crash-reporting services.
+      </p>
+      <p>
+        However, Android, your device manufacturer, or system backup services may process certain information independently according to their own functionality and privacy policies.
+      </p>
+      <p>
+        If you deliberately share content through another application, that application's privacy practices will apply to the information you share.
+      </p>
+    </section>
+
+    <!-- SECTION 6 -->
+    <section id="security" class="section-card">
+      <div class="section-header">
+        <span class="section-num">6</span>
+        <h2 class="section-title">Data Security</h2>
+      </div>
+      <p>
+        Reminder Robo stores its application data locally on your device.
+      </p>
+      <p>
+        We recommend protecting your device with a screen lock and keeping your operating system up to date.
+      </p>
+      <p>
+        No method of electronic storage is completely risk-free. The security of locally stored information may also depend on your device's security settings and backup configuration.
+      </p>
+    </section>
+
+    <!-- SECTION 7 -->
+    <section id="retention" class="section-card">
+      <div class="section-header">
+        <span class="section-num">7</span>
+        <h2 class="section-title">Data Retention and Deletion</h2>
+      </div>
+      <p>
+        Your reminder information remains on your device until you delete it or the relevant application data is removed.
+      </p>
+      <ul>
+        <li>You can delete reminders within the app using the available controls.</li>
+        <li>Uninstalling the app or clearing its data may remove locally stored information. Recovery may not be possible unless a compatible backup exists.</li>
+        <li>Device backups, if enabled, may retain app data according to your device settings and backup provider's policies.</li>
+      </ul>
+    </section>
+
+    <!-- SECTION 8 -->
+    <section id="paid" class="section-card">
+      <div class="section-header">
+        <span class="section-num">8</span>
+        <h2 class="section-title">Paid Application</h2>
+      </div>
+      <p>
+        Reminder Robo is offered as a paid application.
+      </p>
+      <p>
+        The app does not display advertisements and does not use advertising SDKs.
+      </p>
+      <p>
+        Purchases made through Google Play are subject to Google's applicable payment, privacy, and purchase policies. We do not receive your full payment card details through the app.
+      </p>
+    </section>
+
+    <!-- SECTION 9 -->
+    <section id="children" class="section-card">
+      <div class="section-header">
+        <span class="section-num">9</span>
+        <h2 class="section-title">Children's Privacy</h2>
+      </div>
+      <p>
+        Reminder Robo is not intended to knowingly collect personal information from children in violation of applicable laws.
+      </p>
+      <p>
+        Because reminder information is stored locally, users should exercise care when entering personal or sensitive details into the app.
+      </p>
+      <p>
+        If you have concerns about the handling of personal information, please contact us using the details below.
+      </p>
+    </section>
+
+    <!-- SECTION 10 -->
+    <section id="choices" class="section-card">
+      <div class="section-header">
+        <span class="section-num">10</span>
+        <h2 class="section-title">Your Choices</h2>
+      </div>
+      <p>You can:</p>
+      <ul>
+        <li>Choose what information to enter into reminders.</li>
+        <li>Edit or delete reminders.</li>
+        <li>Grant or deny optional device permissions.</li>
+        <li>Manage notification settings.</li>
+        <li>Remove the app and its locally stored data, subject to applicable backup behavior.</li>
+      </ul>
+      <p>
+        Some features may not work as intended if the permissions they require are denied.
+      </p>
+    </section>
+
+    <!-- SECTION 11 -->
+    <section id="changes" class="section-card">
+      <div class="section-header">
+        <span class="section-num">11</span>
+        <h2 class="section-title">Changes to This Privacy Policy</h2>
+      </div>
+      <p>
+        We may update this Privacy Policy to reflect changes in app functionality, applicable law, or privacy practices.
+      </p>
+      <p>
+        Any updated version will be published with a revised "Last Updated" date.
+      </p>
+    </section>
+
+    <!-- SECTION 12 -->
+    <section id="contact" class="section-card">
+      <div class="section-header">
+        <span class="section-num">12</span>
+        <h2 class="section-title">Contact Us</h2>
+      </div>
+      <p>
+        If you have questions about this Privacy Policy or Reminder Robo's privacy practices, please contact the developer:
+      </p>
+
+      <div class="contact-card">
+        <div class="contact-row">
+          <div class="contact-entry">
+            <div class="contact-label">App Name</div>
+            <div class="contact-val">Reminder Robo</div>
+          </div>
+          <div class="contact-entry">
+            <div class="contact-label">Developer</div>
+            <div class="contact-val">LOKMI TECH</div>
+          </div>
+          <div class="contact-entry">
+            <div class="contact-label">Support Email</div>
+            <div class="contact-val">
+              <a href="mailto:lokmitech@gmail.com">lokmitech@gmail.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACKNOWLEDGMENT CALLOUT -->
+    <div class="callout" style="text-align: center; margin-top: 32px; border-left: none; border: 1px solid var(--border);">
+      <p style="font-size: 0.95rem; color: var(--text-muted);">
+        By using <strong>Reminder Robo</strong>, you acknowledge that you have had the opportunity to review this Privacy Policy.
+      </p>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-links">
+      <a href="#intro">Top</a>
+      <a href="#permissions">Permissions</a>
+      <a href="#storage">Data Storage</a>
+      <a href="mailto:lokmitech@gmail.com">Contact Developer</a>
+    </div>
+    <p>© 2026 LOKMI TECH. All rights reserved. • Reminder Robo for Android</p>
+  </footer>
+
+</body>
+</html>
